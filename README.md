@@ -91,5 +91,9 @@ To publish the webpage, you can use Github Pages as a free server. For more deta
 The modeling part is modified based on the code from [Ultralytics](https://github.com/ultralytics/yolov3). The model used is modified from the [Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest) model shared by dog-qiuqiu. Thanks to [nihui](https://github.com/nihui), the author of NCNN, for her help in the NCNN and WASM approach.
 
 
+# Reproducibility of fairness analysis
 
+Set up the environment as indicated in the Requirements section.
+Run the inference using `deployment` as working directory:
+```python detect1.py --source path/to/images --no_save_img --output path/to/output_folder --save-txt```. This will save a txt file in the output folder with the following informations: relative path of image, category, normalized coordinates of bounding boxes.
 
